@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false); // NUEVO
 
   return (
     <div className="container-fluid position-relative nav-bar p-0">
@@ -17,13 +18,15 @@ const Navbar = () => {
           <button
             type="button"
             className="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
+            onClick={() => setNavbarOpen(!navbarOpen)} // CAMBIO
           >
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+          <div
+            className={`collapse navbar-collapse justify-content-between px-3 ${navbarOpen ? "show" : ""}`} // CAMBIO
+            id="navbarCollapse"
+          >
             <div className="navbar-nav ml-auto py-0">
               <Link to="/" className="nav-item nav-link">Home</Link>
               <Link to="/about" className="nav-item nav-link">Acerca de</Link>
@@ -62,7 +65,7 @@ const Navbar = () => {
                   <i className="fab fa-facebook-f text-primary"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/crstan_ortiz?igsh=MTJkODQwODRvdmY0eg%3D%3D&utm_source=qr "
+                  href="https://www.instagram.com/crstan_ortiz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="nav-link px-2"
@@ -70,7 +73,7 @@ const Navbar = () => {
                   <i className="fab fa-instagram text-primary"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/rashmi-singh-429353320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  href="https://www.linkedin.com/in/rashmi-singh-429353320"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="nav-link px-2"
