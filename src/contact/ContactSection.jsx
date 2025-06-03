@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -17,10 +18,10 @@ const ContactSection = () => {
 
   const validate = () => {
     const newErrors = {};
-    if (!formData.name) newErrors.name = "Please enter your name";
-    if (!formData.email) newErrors.email = "Please enter your email";
-    if (!formData.subject) newErrors.subject = "Please enter a subject";
-    if (!formData.message) newErrors.message = "Please enter your message";
+    if (!formData.name) newErrors.name = "Por favor ingresa tu nombre";
+    if (!formData.email) newErrors.email = "Por favor ingresa tu correo";
+    if (!formData.subject) newErrors.subject = "Por favor ingresa un asunto";
+    if (!formData.message) newErrors.message = "Por favor escribe un mensaje";
     return newErrors;
   };
 
@@ -28,10 +29,37 @@ const ContactSection = () => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
-      console.log("Form submitted:", formData);
-      setSubmitted(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setErrors({});
+      // Generar fecha y hora actual formateada
+      const now = new Date();
+      const time = now.toLocaleString("es-MX", {
+        dateStyle: "medium",
+        timeStyle: "short",
+      });
+
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        time: time,
+      };
+
+      emailjs
+        .send(
+          "service_3djmrce",       // Tu Service ID
+          "template_u4wyxw8",      // Tu Template ID
+          templateParams,          // Variables que espera la plantilla
+          "TaVLpbgn0kp0hFf0y"       // Tu Public Key
+        )
+        .then(() => {
+          setSubmitted(true);
+          setFormData({ name: "", email: "", subject: "", message: "" });
+          setErrors({});
+        })
+        .catch((err) => {
+          console.error("Error al enviar:", err);
+          alert("Hubo un error al enviar el mensaje.");
+        });
     } else {
       setErrors(validationErrors);
     }
@@ -41,13 +69,13 @@ const ContactSection = () => {
     <div className="container-fluid py-5">
       <div className="container py-5">
         <div className="text-center mb-3 pb-3">
-          <h6 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>Contact</h6>
-          <h1>Contact For Any Query</h1>
+          <h6 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>Contacto</h6>
+          <h1>Contáctanos para cualquier pregunta.</h1>
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="contact-form bg-white" style={{ padding: "30px" }}>
-              {submitted && <div className="alert alert-success">Your message has been sent.</div>}
+              {submitted && <div className="alert alert-success">Tu mensaje fue enviado con éxito.</div>}
               <form id="contactForm" onSubmit={handleSubmit} noValidate>
                 <div className="form-row">
                   <div className="form-group col-sm-6">
@@ -55,7 +83,7 @@ const ContactSection = () => {
                       type="text"
                       className="form-control p-4"
                       id="name"
-                      placeholder="Your Name"
+                      placeholder="Tu Nombre"
                       value={formData.name}
                       onChange={handleChange}
                     />
@@ -66,7 +94,7 @@ const ContactSection = () => {
                       type="email"
                       className="form-control p-4"
                       id="email"
-                      placeholder="Your Email"
+                      placeholder="Tu Email"
                       value={formData.email}
                       onChange={handleChange}
                     />
@@ -78,7 +106,7 @@ const ContactSection = () => {
                     type="text"
                     className="form-control p-4"
                     id="subject"
-                    placeholder="Subject"
+                    placeholder="Asunto"
                     value={formData.subject}
                     onChange={handleChange}
                   />
@@ -89,7 +117,7 @@ const ContactSection = () => {
                     className="form-control py-3 px-4"
                     rows="5"
                     id="message"
-                    placeholder="Message"
+                    placeholder="Mensaje"
                     value={formData.message}
                     onChange={handleChange}
                   />
@@ -97,7 +125,7 @@ const ContactSection = () => {
                 </div>
                 <div className="text-center">
                   <button className="btn btn-primary py-3 px-4" type="submit">
-                    Send Message
+                    Enviar mensaje
                   </button>
                 </div>
               </form>

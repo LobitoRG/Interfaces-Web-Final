@@ -9,27 +9,27 @@ import testimonial4 from "../assets/img/testimonial-4.jpg";
 const testimonials = [
   {
     image: testimonial1,
-    text: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos labore diam.",
-    name: "Nombre del Cliente",
-    profession: "Profesión"
+    text: "Todo fue perfecto desde la reserva hasta el regreso. Excelente atención y precios justos. Sin duda volveré a viajar con ustedes.",
+    name: "Byron Arciniega",
+    profession: "Ingenierio Civil"
   },
   {
     image: testimonial2,
-    text: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos labore diam.",
-    name: "Nombre del Cliente",
-    profession: "Profesión"
+    text: "Una experiencia increíble. El proceso fue sencillo y el equipo siempre estuvo al pendiente. Recomendado al 100%",
+    name: "Carlos M.",
+    profession: "Maestro"
   },
   {
     image: testimonial3,
-    text: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos labore diam.",
-    name: "Nombre del Cliente",
-    profession: "Profesión"
+    text: "Reservé de último minuto y todo salió perfecto. Muy profesionales y atentos en cada paso del viaje.",
+    name: "Lucia T.",
+    profession: "Arquitecta"
   },
   {
     image: testimonial4,
-    text: "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos labore diam.",
-    name: "Nombre del Cliente",
-    profession: "Profesión"
+    text: "Gracias a ustedes viví el mejor viaje de mi vida. Todo fue fácil, rápido y seguro. ¡Los recomiendo totalmente!",
+    name: "Jorge Ramos",
+    profession: "Pescador"
   }
 ];
 

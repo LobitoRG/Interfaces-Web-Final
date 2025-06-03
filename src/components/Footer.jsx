@@ -5,13 +5,12 @@ const Footer = () => {
         <div className="row pt-5">
           <div className="col-lg-3 col-md-6 mb-5">
             <a href="#" className="navbar-brand">
-              <h1 className="text-primary"><span className="text-white">TRAVEL</span>ER</h1>
+              <h1 className="text-primary"><span className="text-white">KAY</span>AK</h1>
             </a>
             <p>
-              Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor.
-              No sed vero lorem dolor dolor
-            </p>
-            <h6 className="text-white text-uppercase mt-4 mb-3" style={{ letterSpacing: "5px" }}>Follow Us</h6>
+           Somos una empresa comprometida con ofrecer experiencias de viaje únicas, accesibles y seguras, conectando personas con los destinos más extraordinarios del mundo.
+           </p>
+            <h6 className="text-white text-uppercase mt-4 mb-3" style={{ letterSpacing: "5px" }}>Siguenos</h6>
             <div className="d-flex justify-content-start">
               {["twitter", "facebook-f", "linkedin-in", "instagram"].map((icon) => (
                 <a key={icon} className="btn btn-outline-primary btn-square mr-2" href="#">
@@ -22,34 +21,34 @@ const Footer = () => {
           </div>
 
           <div className="col-lg-3 col-md-6 mb-5">
-            <h5 className="text-white text-uppercase mb-4" style={{ letterSpacing: "5px" }}>Our Services</h5>
+            <h5 className="text-white text-uppercase mb-4" style={{ letterSpacing: "5px" }}>Nuestros Servicios</h5>
             <div className="d-flex flex-column justify-content-start">
-              {["About", "Destination", "Services", "Packages", "Guides", "Testimonial", "Blog"].map((item) => (
+              {["Acerca de", "Destinos", "Servicios", "Paquetes", "Guìas", "Testimonios", "Blog"].map((item) => (
                 <a key={item} className="text-white-50 mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>{item}</a>
               ))}
             </div>
           </div>
 
           <div className="col-lg-3 col-md-6 mb-5">
-            <h5 className="text-white text-uppercase mb-4" style={{ letterSpacing: "5px" }}>Useful Links</h5>
+            <h5 className="text-white text-uppercase mb-4" style={{ letterSpacing: "5px" }}>Nuestros Links</h5>
             <div className="d-flex flex-column justify-content-start">
-              {["About", "Destination", "Services", "Packages", "Guides", "Testimonial", "Blog"].map((item) => (
+              {["Acerca de", "Destinos", "Servicios", "Paquetes", "Guìas", "Testimonios", "Blog"].map((item) => (
                 <a key={item} className="text-white-50 mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>{item}</a>
               ))}
             </div>
           </div>
 
           <div className="col-lg-3 col-md-6 mb-5">
-            <h5 className="text-white text-uppercase mb-4" style={{ letterSpacing: "5px" }}>Contact Us</h5>
-            <p><i className="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-            <p><i className="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-            <p><i className="fa fa-envelope mr-2"></i>info@example.com</p>
+            <h5 className="text-white text-uppercase mb-4" style={{ letterSpacing: "5px" }}>Contactanos</h5>
+            <p><i className="fa fa-map-marker-alt mr-2"></i>123 Av. Tecnológico, Tepic, México</p>
+            <p><i className="fa fa-phone-alt mr-2"></i>+52 311 184 7284</p>
+            <p><i className="fa fa-envelope mr-2"></i>chalmunozor@ittepic.edu.mx</p>
             <h6 className="text-white text-uppercase mt-4 mb-3" style={{ letterSpacing: "5px" }}>Newsletter</h6>
             <div className="w-100">
               <div className="input-group">
-                <input type="text" className="form-control border-light" style={{ padding: "25px" }} placeholder="Your Email" />
+                <input type="text" className="form-control border-light" style={{ padding: "25px" }} placeholder="Tu dirección de correo Electrónico" />
                 <div className="input-group-append">
-                  <button className="btn btn-primary px-3">Sign Up</button>
+                  <button className="btn btn-primary px-3">Registrate</button>
                 </div>
               </div>
             </div>
@@ -61,12 +60,12 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-6 text-center text-md-left mb-3 mb-md-0">
             <p className="m-0 text-white-50">
-              &copy; <a href="#">Domain</a>. All Rights Reserved.
+              &copy; <a href="#">Kayak group</a>. Todos los derechos reservados.
             </p>
           </div>
           <div className="col-lg-6 text-center text-md-right">
             <p className="m-0 text-white-50">
-              Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+              diseñado con <a href="https://htmlcodex.com">BOOTSTRAP</a>
             </p>
           </div>
         </div>

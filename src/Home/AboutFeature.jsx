@@ -28,7 +28,7 @@ const AboutFeature = () => (
                   <img className="img-fluid" src={about2} alt="Paquete 2" />
                 </div>
               </div>
-              <a href="#" className="btn btn-primary mt-1">Iniciar ahora</a>
+              <a href="#" className="btn btn-primary mt-1">Iniciar Ahora</a>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ const AboutFeature = () => (
           <div className="col-md-4">
             <div className="d-flex mb-4 mb-lg-0">
               <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style={{ height: "100px", width: "100px" }}>
-                <i className="fa fa-2x fa-money-check-alt text-white"></i>
+                <i className="fas fa-2x fa-money-check-alt text-white"></i>
               </div>
               <div className="d-flex flex-column">
                 <h5>Precios competitivos</h5>
@@ -54,7 +54,7 @@ const AboutFeature = () => (
           <div className="col-md-4">
             <div className="d-flex mb-4 mb-lg-0">
               <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style={{ height: "100px", width: "100px" }}>
-                <i className="fa fa-2x fa-award text-white"></i>
+                <i className="fas fa-2x fa-award text-white"></i>
               </div>
               <div className="d-flex flex-column">
                 <h5>Mejores Servicios</h5>

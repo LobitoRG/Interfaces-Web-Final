@@ -8,13 +8,13 @@ const PageHeader = () => {
           className="d-flex flex-column align-items-center justify-content-center"
           style={{ minHeight: "400px" }}
         >
-          <h3 className="display-4 text-white text-uppercase">Contact</h3>
+          <h3 className="display-4 text-white text-uppercase">Contacto</h3>
           <div className="d-inline-flex text-white">
             <p className="m-0 text-uppercase">
               <a className="text-white" href="/">Home</a>
             </p>
             <i className="fa fa-angle-double-right pt-1 px-3"></i>
-            <p className="m-0 text-uppercase">Contact</p>
+            <p className="m-0 text-uppercase">Contacto</p>
           </div>
         </div>
       </div>

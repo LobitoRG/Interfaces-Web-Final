@@ -4,17 +4,17 @@ import blog2 from "../assets/img/blog-2.jpg";
 import blog3 from "../assets/img/blog-3.jpg";
 
 const blogs = [
-  { image: blog1, day: "01", month: "Jan", author: "Admin", category: "Tours & Travel", title: "Dolor justo sea kasd lorem clita justo diam amet" },
-  { image: blog2, day: "01", month: "Jan", author: "Admin", category: "Tours & Travel", title: "Dolor justo sea kasd lorem clita justo diam amet" },
-  { image: blog3, day: "01", month: "Jan", author: "Admin", category: "Tours & Travel", title: "Dolor justo sea kasd lorem clita justo diam amet" },
+  { image: blog1, day: "01", month: "Jun", author: "Admin", category: "Tours & Travel", title: "Las mejores playas paradisiacas del caribe" },
+  { image: blog2, day: "02", month: "Jun", author: "Admin", category: "Tours & Travel", title: "Vive un momento de relagación en los mejores destinos" },
+  { image: blog3, day: "03", month: "Jun", author: "Admin", category: "Tours & Travel", title: "Experiencias inolvidables en destinos tropicales" },
 ];
 
 const BlogSection = () => (
   <div className="container-fluid py-5">
     <div className="container pt-5 pb-3">
       <div className="text-center mb-3 pb-3">
-        <h6 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>Our Blog</h6>
-        <h1>Latest From Our Blog</h1>
+        <h6 className="text-primary text-uppercase" style={{ letterSpacing: "5px" }}>NuestrO BLOG</h6>
+        <h1>Lo Ultimo De Nuestro Blog</h1>
       </div>
       <div className="row pb-3">
         {blogs.map((blog, index) => (

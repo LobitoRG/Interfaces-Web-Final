@@ -3,40 +3,22 @@ import React from "react";
 const services = [
   {
     icon: "fa-route",
-    title: "Guía de Viaje",
+    title: "Guía de Viajes",
     description:
-      "Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore",
+      "Descubre los mejores destinos, consejos prácticos y todo lo que necesitas saber para tu próxima aventura.",
   },
   {
     icon: "fa-ticket-alt",
-    title: "Reserva de Boletos",
+    title: "Reservación de Boletos",
     description:
-      "Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore",
+      "Reserva tus boletos de manera rápida y segura para cualquier evento o viaje. ¡Hazlo en pocos clics!",
   },
   {
     icon: "fa-hotel",
     title: "Reserva de Hotel",
     description:
-      "Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore",
-  },
-  {
-    icon: "fa-route",
-    title: "Guía de Viaje",
-    description:
-      "Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore",
-  },
-  {
-    icon: "fa-ticket-alt",
-    title: "Reserva de Boletos",
-    description:
-      "Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore",
-  },
-  {
-    icon: "fa-hotel",
-    title: "Reserva de Hotel",
-    description:
-      "Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore",
-  },
+      "Reserva tu hotel ideal de manera rápida y segura. ¡Encuentra el mejor lugar para tu estancia!",
+  }
 ];
 
 const ServiceSection = () => (
@@ -52,7 +34,7 @@ const ServiceSection = () => (
         {services.map((service, index) => (
           <div className="col-lg-4 col-md-6 mb-4" key={index}>
             <div className="service-item bg-white text-center mb-2 py-5 px-4">
-              <i className={`fa fa-2x ${service.icon} mx-auto mb-4`}></i>
+              <i className={`fas fa-2x ${service.icon} mx-auto mb-4`}></i>
               <h5 className="mb-2">{service.title}</h5>
               <p className="m-0">{service.description}</p>
             </div>

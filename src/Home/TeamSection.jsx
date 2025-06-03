@@ -1,14 +1,14 @@
 import React from "react";
-import team1 from "../assets/img/team-1.jpg";
-import team2 from "../assets/img/team-2.jpg";
+import team1 from "../assets/img/team2.jpg";
+import team2 from "../assets/img/team1.jpg";
 import team3 from "../assets/img/team-3.jpg";
 import team4 from "../assets/img/team-4.jpg";
 
 const guides = [
-  { image: team1, name: "Nombre del Guía", role: "Guía Turístico" },
-  { image: team2, name: "Nombre del Guía", role: "Guía Turístico" },
-  { image: team3, name: "Nombre del Guía", role: "Guía Turístico" },
-  { image: team4, name: "Nombre del Guía", role: "Guía Turístico" },
+  { image: team1, name: "Karla Beltran", role: "Guía Turístico" },
+  { image: team2, name: "ALex Ortiz", role: "Guía Turístico" },
+  { image: team3, name: "Adolfo Tapia", role: "Guía Turístico" },
+  { image: team4, name: "Tony Fergusson", role: "Guía Turístico" },
 ];
 
 const TeamSection = () => (
